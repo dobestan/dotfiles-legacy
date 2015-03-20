@@ -1,1 +1,9 @@
 alias ls="ls -al"
+
+# Git, Github
+eval "$(hub alias -s)"
+
+alias ga="git add"
+alias gs="git status"
+alias gd="git diff"
+
