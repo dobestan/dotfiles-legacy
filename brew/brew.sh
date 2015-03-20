@@ -21,6 +21,11 @@ brew install pyenv
 brew install pyenv-virtualenv
 brew install autoenv
 
+# Ruby-based Development
+# https://github.com/sstephenson/rbenv
+brew install rbenv
+brew install ruby-build
+
 # https://github.com/rupa/z
 brew install z
 
