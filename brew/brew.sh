@@ -42,5 +42,10 @@ brew install ghi
 brew install heroku-toolbelt
 brew install vim --override-system-vi
 
+brew install curl
+brew install wget
 brew install httpie
 brew install tree
+
+# Zsh
+brew install zsh
