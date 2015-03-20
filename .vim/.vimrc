@@ -8,3 +8,6 @@ if filereadable(expand("~/.vim/vundles.vim"))
   source ~/.vim/vundles.vim
 endif
 
+
+" ================ Custom Settings ========================
+so ~/.vim/settings.vim
