@@ -12,3 +12,7 @@ nnoremap <silent> <C-\> :NERDTreeFind<CR>:vertical res 30<CR>
 
 " ==== TagList
 nnoremap <silent> <C-t> :TlistToggle<CR>
+
+imap jj <Esc>
+imap jk <Esc>
+imap kk <Esc>
