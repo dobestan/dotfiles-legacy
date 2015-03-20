@@ -21,3 +21,7 @@ source /usr/local/opt/autoenv/activate.sh
 
 # Ruby-based Development
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
+# Node-based Development
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh

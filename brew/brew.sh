@@ -15,6 +15,7 @@ sudo ln -s /usr/local/bin/gsha256sum /usr/local/bin/sha256sum
 # should override with language-specific version manager ( pyenv, rvm etc )
 brew install python
 brew install ruby
+brew install node
 
 # Python-based Development
 brew install pyenv
@@ -25,6 +26,10 @@ brew install autoenv
 # https://github.com/sstephenson/rbenv
 brew install rbenv
 brew install ruby-build
+
+# Node-based Development
+# https://github.com/creationix/nvm
+brew install nvm
 
 # https://github.com/rupa/z
 brew install z
