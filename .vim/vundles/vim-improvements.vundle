@@ -1,3 +1,4 @@
 Plugin 'scrooloose/nerdtree'
 Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'vim-scripts/taglist.vim'
+Plugin 'altercation/vim-colors-solarized'
