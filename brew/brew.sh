@@ -11,8 +11,20 @@
 brew install coreutils
 sudo ln -s /usr/local/bin/gsha256sum /usr/local/bin/sha256sum
 
+# Update System Ruby, Python for system-wide libraries
+# should override with language-specific version manager ( pyenv, rvm etc )
+brew install python
+brew install ruby
+
+# Python-based Development
+brew install pyenv
+brew install pyenv-virtualenv
+brew install autoenv
+
+# https://github.com/rupa/z
 brew install z
 
+# Git, Github
 brew install git
 brew install hub
 brew install ghi

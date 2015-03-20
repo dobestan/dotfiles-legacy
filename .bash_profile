@@ -13,3 +13,8 @@ source ~/.aliases
 source /usr/local/etc/bash_completion.d/git-completion.bash
 source /usr/local/etc/bash_completion.d/git-prompt.sh
 source /usr/local/etc/bash_completion.d/hub.bash_completion.sh
+
+# Python-based Development
+if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
+if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
+source /usr/local/opt/autoenv/activate.sh
