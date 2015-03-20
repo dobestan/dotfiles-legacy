@@ -5,3 +5,5 @@ ln -s /Users/dobestan/.dotfiles/.zshrc ~/
 
 ln -s /Users/dobestan/.dotfiles/.vim ~/
 ln -s /Users/dobestan/.dotfiles/.vim/.vimrc ~/
+
+ln -s /Users/dobestan/.dotfiles/.tmux.conf ~/

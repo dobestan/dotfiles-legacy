@@ -1,5 +1,3 @@
-alias ls="ls -al"
-
 # Git, Github
 eval "$(hub alias -s)"
 
@@ -7,3 +5,47 @@ alias ga="git add"
 alias gs="git status"
 alias gd="git diff"
 
+# Alias
+alias ae='vim ~/.aliases' #alias edit
+alias ar='source ~/.aliases'  #alias reload
+
+# Mvim as default
+alias vim="mvim -v"
+
+# Apps
+alias st='open -a SourceTree .'
+
+# PS
+alias psa="ps aux"
+alias psg="ps aux | grep "
+alias psr='ps aux | grep ruby'
+
+# Listing
+alias ls='ls -alGh'
+
+# .vimrc
+alias ve='vim ~/.vimrc'
+
+# .zshrc
+alias ze='vim ~/.zshrc'
+
+# Git
+alias gs='git status'
+alias gi='vim .gitignore'
+alias ga='git add -A'
+alias gl='git log --graph --abbrev-commit --decorate --date=relative --format=format:"%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)" --all'
+alias glg='gl'
+alias glog='gl'
+
+# Python
+alias p='python'
+
+# Django
+alias m='python manage.py'
+alias mrs='python manage.py runserver'
+alias mt='python manage.py test -v2 --color'
+alias mm='python manage.py migrate'
+alias mmm='python manage.py makemigrations'
+
+alias hs='honcho start'
+alias hsd='honcho start -f Procfile.development'
