@@ -11,6 +11,7 @@ Plugin 'gmarik/Vundle.vim'
 
 
 runtime vim-improvements.vundle
+runtime git.vundle
 
 
 " All of your Plugins must be added before the following line
