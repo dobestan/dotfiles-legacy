@@ -1,5 +1,10 @@
+source ~/.common_profile
+
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/dobestan/.oh-my-zsh
+
+# Powerline
+. /usr/local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -23,10 +28,10 @@ ZSH_THEME="agnoster"
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-# ENABLE_CORRECTION="true"
+ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
-# COMPLETION_WAITING_DOTS="true"
+COMPLETION_WAITING_DOTS="true"
 
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
@@ -45,17 +50,17 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git-flow django history-substring-search grunt vagrant brew pip)
 
 # User configuration
 
 export PATH="/Users/dobestan/.rbenv/shims:/Users/dobestan/.pyenv/shims:/usr/local/opt/coreutils/libexec/gnubin:/Users/dobestan/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
-# export MANPATH="/usr/local/man:$MANPATH"
+export MANPATH="/usr/local/man:$MANPATH"
+
 
 source $ZSH/oh-my-zsh.sh
 
-# You may need to manually set your language environment
-# export LANG=en_US.UTF-8
+bindkey -v
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
@@ -63,6 +68,7 @@ source $ZSH/oh-my-zsh.sh
 # else
 #   export EDITOR='mvim'
 # fi
+export EDITOR='vim'
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -79,7 +85,15 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-source ~/.common_profile
+bindkey -M vicmd 'k' history-substring-search-up
+bindkey -M vicmd 'j' history-substring-search-down
 
-. /usr/local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+# added by travis gem
+[ -f /Users/dobestan/.travis/travis.sh ] && source /Users/dobestan/.travis/travis.sh
+
+export DOCKER_HOST=tcp://192.168.59.105:2376
+export DOCKER_CERT_PATH=/Users/dobestan/.boot2docker/certs/boot2docker-vm
+export DOCKER_TLS_VERIFY=1
+eval "$(rbenv init -)"
