@@ -1,16 +1,23 @@
 # Git, Github
-eval "$(hub alias -s)"
+# eval "$(hub alias -s)"
 
 alias ga="git add"
 alias gs="git status"
 alias gd="git diff"
+alias gac="git add . && git commit"
+
+alias gfi="git flow init"
+alias gf="git flow"
+alias gff="git flow feature"
+alias gffs="git flow feature start"
+alias gfff="git flow feature finish"
 
 # Alias
 alias ae='vim ~/.aliases' #alias edit
 alias ar='source ~/.aliases'  #alias reload
 
 # Mvim as default
-alias vim="mvim -v"
+# alias vim="mvim -v"
 
 # Apps
 alias st='open -a SourceTree .'
@@ -39,6 +46,7 @@ alias glog='gl'
 
 # Python
 alias p='python'
+alias ip='ipython'
 
 # Django
 alias m='python manage.py'
@@ -46,6 +54,14 @@ alias mrs='python manage.py runserver'
 alias mt='python manage.py test -v2 --color'
 alias mm='python manage.py migrate'
 alias mmm='python manage.py makemigrations'
+alias ms='python manage.py shell_plus'
 
 alias hs='honcho start'
 alias hsd='honcho start -f Procfile.development'
+
+
+# tmux
+alias tm='tmux'
+
+# Vagrant
+alias vag='vagrant'
