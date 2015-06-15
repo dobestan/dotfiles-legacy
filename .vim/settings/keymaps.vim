@@ -10,9 +10,12 @@ imap <silent> <M-D> -
 " Open the project tree and expose current file in the nerdtree with Ctrl-\
 nnoremap <silent> <C-\> :NERDTreeFind<CR>:vertical res 30<CR>
 
-" ==== TagList
-nnoremap <silent> <C-t> :TlistToggle<CR>
+" ==== Tagbar
+nnoremap <silent> <C-t> :TagbarToggle<CR>
 
 imap jj <Esc>
 imap jk <Esc>
 imap kk <Esc>
+
+" ==== Search
+nnoremap <CR> :noh<CR><CR>
