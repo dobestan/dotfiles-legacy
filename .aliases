@@ -1,3 +1,13 @@
+alias se="vi ~/.ssh/config"
+
+
+# Todo.txt
+alias t="todo.sh"
+alias te="vim ~/todo/todo.txt"
+alias ts="cat ~/todo/todo.txt"
+alias ta="todo.sh add"
+alias tl="todo.sh list"
+
 # Git, Github
 # eval "$(hub alias -s)"
 
