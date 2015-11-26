@@ -58,6 +58,13 @@ alias glog='gl'
 alias p='python'
 alias ip='ipython'
 
+alias fl='flake8'
+
+# Jupyter
+alias j='Jupyter'
+alias jn='jupyter notebook'
+alias jw='open http://local.jupyter.com:8888'
+
 # Django
 alias m='python manage.py'
 alias mrs='python manage.py runserver'
