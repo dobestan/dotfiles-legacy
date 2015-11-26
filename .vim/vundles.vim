@@ -14,6 +14,7 @@ runtime vim-improvements.vundle
 runtime git.vundle
 runtime web.vundle
 runtime python.vundle
+runtime js.vundle
 
 
 " All of your Plugins must be added before the following line
